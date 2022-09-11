@@ -1,0 +1,1 @@
+SELECT students_id, COUNT(students_id) FROM majors_in GROUP BY students_id;
