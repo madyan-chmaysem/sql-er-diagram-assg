@@ -1,0 +1,1 @@
+SELECT COUNT(students_id) FROM enrolled WHERE courses_crn in (SELECT id FROM departments WHERE name="Computer Science");
