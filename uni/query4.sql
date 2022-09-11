@@ -1,0 +1,1 @@
+SELECT name FROM students WHERE id NOT IN( SELECT students_id FROM enrolled WHERE courses_crn = (SELECT crn FROM courses WHERE courses.name="cs275"));
