@@ -1,0 +1,1 @@
+SELECT id FROM rooms WHERE rooms.capacity>=100;
