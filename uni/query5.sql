@@ -1,0 +1,1 @@
+SELECT COUNT(students_id) FROM majors_in WHERE departments_id in (SELECT id FROM departments WHERE name="Computer Science") AND departments_id IN (SELECT departments_id FROM majors_in WHERE students_id in (SELECT students_id FROM enrolled WHERE courses_crn in (SELECT crn from courses WHERE courses.name="cs275")));
