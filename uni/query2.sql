@@ -1,0 +1,1 @@
+SELECT crn FROM courses WHERE courses.start_time IN (SELECT MIN(start_time) FROM courses);
